@@ -14,13 +14,17 @@ Para começarmos, me fale um pouco sobre você: você se considera mais fã de *
  
 
 Esperando prompt:gatos
+
 Resposta:  Miauu! 😸 Ótima escolha! Os gatos são criaturas incríveis, inteligentes e independentes. Assim como quem busca conhecimento! 
 
 E falando em conhecimento, qual a sua principal motivação para fazer um curso online? 🤔
 
 a) Quero turbinar minha carreira profissional! 🚀
+
 b) Busco desenvolvimento pessoal e autoconhecimento. 🧘
+
 c) Desejo aprender algo novo só por curiosidade! 🤓
+
 d) Outros (especifique):  📝 
  
 
@@ -33,8 +37,11 @@ Esperando prompt:a
 Resposta:  Uau, um(a) programador(a) buscando dominar a IA! Que incrível! 🤩 Para finalizar, me conta: qual linguagem de programação você domina e gostaria de usar para se aventurar na IA?  
 
 a) Python 🐍 (a queridinha da IA!)
+
 b) Java ☕ (robusta e poderosa!)
+
 c) JavaScript 🚀 (versátil e em alta!)
+
 d) Outras (especifique): 📝 
  
 
