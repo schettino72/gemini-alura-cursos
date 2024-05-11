@@ -4,6 +4,8 @@ Chatbot: Descubra os cursos da Alura
 
 A Alura é demais, né? São mais de 1000 cursos disponíveis! Mas e aí, como encontrar o curso certo pra você? Apresentando a Lulu! 🤖 A Lulu é um chatbot que faz umas perguntinhas de boa, pra te conhecer melhor. Depois do papo, ela te sugere uns cursos da Alura que são a sua cara! 😉
 
+
+
 # DEV
 
 Este projeto faz uso das seguintes tecnicas apresentadas no curso:
@@ -12,6 +14,31 @@ Este projeto faz uso das seguintes tecnicas apresentadas no curso:
 - System Instruction: para descrever compartamento do BOT. Ele faz perguntas para colher dados antes da responsta final
 - Uso de exmplos one-shot, few-shot para melhora do prompt.
 - Uso de dados especificos (no caso a lista de cursos da alura - obtido atraves de scraping do site).
+
+
+# USO
+
+Existem 3 versoes do chatbot:
+
+1) `main.ipynb` notebook com versao inicial roda no Google Collab.
+2) `main.py` versao CLI
+3) `web.py` interface WEB usando o streamlit
+
+
+## instalacao
+
+```
+pip install -r requirements.txt
+```
+
+## configuracao
+
+Crie um arquivo `.env` com a sua chave de API, exemplo:
+
+```
+GOOGLE_API_KEY=minha-chave
+```
+
 
 
 # Exemplo
