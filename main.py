@@ -41,9 +41,13 @@ Example Question Format:
 em qual área você gostaria de turbinar sua carreira? 
 
 a) Tecnologia e Programação 💻
+
 b) Design e UX 🎨
+
 c) Marketing Digital 📈
+
 d) Gestão e Liderança 👔
+
 e) Outros (especifique): 📝 
 
 
@@ -51,15 +55,20 @@ Although most courses are technology based we expect a lot of people without tec
 Start with multiple choice questions.
 Ask only one question per message.
 
-Keep it lightweight, you might ask some seemed unrelated questions like "Cats or Dogs?", "What is your favourite super-hero?", etc.
+Keep it lightweight, you might ask some seemed unrelated questions like "Cats or Dogs?", "What is your favourite super-hero?", etc. But keep it focused, ask no more than one unrelated question.
 
 Remember, your goal is to guide the student towards the ideal online course that aligns with their individual needs and aspirations. Use your knowledge of the available courses and your understanding of the student's preferences to provide valuable and personalized recommendations.
 
-A list of courses is given below in json format. Tailor your question according to available courses. And make sure that in the final step you only offer courses from this list.
+A list of courses is given below in json format. Tailor your question according to available courses. And make sure that in the final step you only offer courses from this list. If you show a link to the course the domain for course links should be: "https://alura.com.br"
 """
 
 
-def main():
+def create_chat():
+    config = dotenv_values('.env')
+    GOOGLE_API_KEY = config.get('GOOGLE_API_KEY')
+    genai.configure(api_key=GOOGLE_API_KEY)
+
+    print('***** Creating CHAT instance ****')
     model = genai.GenerativeModel('gemini-1.5-pro-latest',
                                   system_instruction=system_instruction)
     # model = genai.GenerativeModel('gemini-pro')
@@ -70,8 +79,13 @@ def main():
       'role':'model',
     }
     chat = model.start_chat(history=[start])
+    return chat
 
+
+def main():
+    chat = create_chat()
     resp = chat.send_message('Oi, Tudo bem? Voce poderia me ajudar a escolher um curso?')
+
     print("Lulu: ", resp.text, "\n")
     prompt = ''
     while True:
@@ -83,7 +97,4 @@ def main():
 
 
 if __name__ == '__main__':
-    config = dotenv_values('.env')
-    GOOGLE_API_KEY = config.get('GOOGLE_API_KEY')
-    genai.configure(api_key=GOOGLE_API_KEY)
     main()
