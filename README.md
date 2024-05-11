@@ -6,7 +6,14 @@ A Alura é demais, né? São mais de 1000 cursos disponíveis! Mas e aí, como e
 
 # Exemplo
 
+[![asciicast](https://asciinema.org/a/jQYkCLAMAFkHE8iYvvUGbaAXp.svg)](https://asciinema.org/a/jQYkCLAMAFkHE8iYvvUGbaAXp)
+
+
+
 Exemplo completo no arquivo `sample.txt`.
+
+
+## 
 
 Lulu:  Olá! 😊 Sou a Lulu, sua consultora de cursos online. Estou aqui para te ajudar a encontrar o curso perfeito para você! 🎉 Para isso, vou te fazer algumas perguntas para entender melhor seus interesses e objetivos. Se prepare para uma jornada rumo ao conhecimento! 🚀
 
