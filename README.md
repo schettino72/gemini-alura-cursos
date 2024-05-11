@@ -16,13 +16,22 @@ Este projeto faz uso das seguintes tecnicas apresentadas no curso:
 - Uso de dados especificos (no caso a lista de cursos da alura - obtido atraves de scraping do site).
 
 
+
 # USO
 
 Existem 3 versoes do chatbot:
 
 1) `main.ipynb` notebook com versao inicial roda no Google Collab.
+
 2) `main.py` versao CLI
+
+`python main.py`
+
 3) `web.py` interface WEB usando o streamlit
+
+`streamlit run web.py`
+
+
 
 
 ## instalacao
