@@ -4,6 +4,16 @@ Chatbot: Descubra os cursos da Alura
 
 A Alura é demais, né? São mais de 1000 cursos disponíveis! Mas e aí, como encontrar o curso certo pra você? Apresentando a Lulu! 🤖 A Lulu é um chatbot que faz umas perguntinhas de boa, pra te conhecer melhor. Depois do papo, ela te sugere uns cursos da Alura que são a sua cara! 😉
 
+# DEV
+
+Este projeto faz uso das seguintes tecnicas apresentadas no curso:
+
+- Uso da API `google.generativeai` para criacao de um chatbot
+- System Instruction: para descrever compartamento do BOT. Ele faz perguntas para colher dados antes da responsta final
+- Uso de exmplos one-shot, few-shot para melhora do prompt.
+- Uso de dados especificos (no caso a lista de cursos da alura - obtido atraves de scraping do site).
+
+
 # Exemplo
 
 [![asciicast](https://asciinema.org/a/jQYkCLAMAFkHE8iYvvUGbaAXp.svg)](https://asciinema.org/a/jQYkCLAMAFkHE8iYvvUGbaAXp)
